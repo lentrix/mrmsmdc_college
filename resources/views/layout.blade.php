@@ -41,7 +41,16 @@
 
     <p style="font-size: 0.8em; color: #888; text-align:center;">Copyright &copy; 2019. Benjie B. Lenteria<br>All rights reserved.</p>
 
-    @yield('scripts')
+    <script>
+        $(document).ready(function(){
+            setTimeout(function(){
+                $(".alert").fadeOut(1000);
+            }, 5000);
+
+            @yield('scripts')
+        })
+    </script>
+
 </div>
 
 

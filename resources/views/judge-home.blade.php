@@ -126,23 +126,13 @@
 
 @section('scripts')
 
-<script>
-
-$(document).ready(function(){
-    $(".score").change(function(){
-        var max = $(this).attr('data-max') * 1;
-        var score = $(this).val() * 1;
-        if($(this).val() > max){
-            alert('The score you entered exceeded the maximum score.' + score + " max: " + max);
-            $(this).val(max);
-        }
-    })
-
-    setTimeout(function(){
-        $(".alert").fadeOut(1000);
-    }, 5000);
+$(".score").change(function(){
+    var max = $(this).attr('data-max') * 1;
+    var score = $(this).val() * 1;
+    if($(this).val() > max){
+        alert('The score you entered exceeded the maximum score.' + score + " max: " + max);
+        $(this).val(max);
+    }
 });
-
-</script>
 
 @stop
