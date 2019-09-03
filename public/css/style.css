@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "cinzel";
+    src: url("../fonts/Cinzel-Regular.ttf");
+}
+
+@font-face {
+    font-family: "cloister";
+    src: url("../fonts/CloisterBlack.ttf");
+}
+
+@font-face {
+    font-family: "comfortaa";
+    src: url("../fonts/Comfortaa-Light.ttf");
+}
+
+* {
+    font-family: "comfortaa";
+}
+
+.big {
+    font-size: 1.6em;
+    font-family: "cinzel";
+}
+
+h1,
+h2,
+h3 {
+    font-family: "cinzel";
+}
+
+.judge-name {
+    font-size: 1.4em;
+    font-family: "cinzel";
+    margin-top: -10px;
+    border-top: 1px solid #9f9f9f;
+}
+
+tr.center th,
+tr.center td {
+    text-align: center !important;
+}
+
+input.score {
+    width: 50px;
+    text-align: center;
+}
+
+.scoresheet td,
+.scoresheet th {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 100px;
+}
+
+.uline {
+    border-bottom: 1px solid #ccc;
+}
